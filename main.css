@@ -1,0 +1,168 @@
+*{
+    font-family: 'Borel', cursive;
+    box-sizing: border-box;
+
+}
+
+body{
+    margin: 0;
+    text-align: center;
+}
+
+.background{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    z-index: -10;
+}
+
+.area-backdrop{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgb(48, 48, 48, 0.9);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+
+.action-btn{
+    font-size: 4rem;
+    color:rgba(255, 60, 60, 0.952);
+    display: none;
+}
+
+.wpm-result{
+    font-size: 2rem;
+    flex-direction: column;
+    width: 60%;
+    height: 30%;
+    background-color: rgb(210, 234, 255);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-header{
+    margin-top: 10px;
+    text-align: center;
+    color: white;
+    font-size: 2.5rem;
+}
+
+.timer{
+    text-align: center;
+}
+
+.timer-counter{
+    display: inline-block;
+    font-size: 2rem;
+    color: rgb(248, 157, 73)
+}
+
+
+
+.text-section{
+    width: 70%;
+    color: white;
+    padding: 10px;
+    margin: 20px auto 0 auto;
+    border: black solid 3px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* .text-section_quote{
+
+} */
+
+.text-section_quote span{
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-size: 1.6rem;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.not-selected{
+    color: white;
+}
+
+.green{
+    color: rgb(108, 255, 49);
+}
+
+.red{
+    color: rgb(255, 73, 73)
+}
+
+.error{
+    background:rgb(255, 122, 122, 0.5);
+    padding: 5px;
+}
+
+.typing-section{
+    width: 60%;
+    height: 40px;
+    padding: 10px;
+    margin: 15px auto;
+}
+
+.typing-section textarea{
+    width: 100%;
+    padding: 1rem;
+    min-height: 150px;
+    font-size: 20px;
+    color: white;
+    background-color: transparent;
+    border: 2px solid black;
+    font-family: 'Ubuntu', sans-serif;
+    background: rgb(255, 255, 255, 0.1);
+    resize: none;
+}
+
+.button-control{
+    position: relative;
+    top: 10rem;
+}
+
+.button-control_cta{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    border: 2px rgb(63, 63, 63) solid;
+    color: rgb(255, 255, 255); 
+    background-color: #4CAF50;
+    cursor: pointer;
+}
+
+.button-control_cta.active{
+    background-color: rgb(255, 73, 73);
+}
+
+.button-control_cta:focus{
+    outline: 0;
+}
+
+.button-control_cta:active,
+.button-control_cta:hover{
+    border: 2px rgb(255, 119, 119) solid;
+}
+
+
+.typing-section textarea:hover,
+.typing-section textarea:active   {
+    outline: 0;
+    border: 2px solid rgb(255, 122, 122);
+}
+
+.typing-section textarea:focus{
+    outline: 0;
+}
